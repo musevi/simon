@@ -40,14 +40,14 @@
       </div>
       <div class="game">
         <div class="button-container">
-          <button class="button-top-left"></button>
-          <button class="button-top-right"></button>
-          <button class="button-bottom-left"></button>
-          <button class="button-bottom-right"></button>
+          <button id="darkblue" class="game-button button-top-left" onclick="game.pressButton(this)"></button>
+          <button id="lightblue" class="game-button button-top-right" onclick="game.pressButton(this)"></button>
+          <button id="lighterblue" class="game-button button-bottom-left" onclick="game.pressButton(this)"></button>
+          <button id="white" class="game-button button-bottom-right" onclick="game.pressButton(this)"></button>
           <div class="controls center">
             <div class="game-name">Simon</div>
-            <div class="score center">98</div>
-            <button class="btn btn-primary">Reset</button>
+            <div class="score center">--</div>
+            <button class="btn btn-primary" onclick="game.reset()">Reset</button>
           </div>
         </div>
       </div>
@@ -59,5 +59,7 @@
       <br />
       <a href="https://github.com/musevi/simon">GitHub</a>
     </footer>
+
+    <script> src="play.js" </script>
   </body>
 </html>
